@@ -5,14 +5,7 @@
     <c:param name="title" value="TravelPal"></c:param>
 </c:import>
 
-<%
-    if(session.getAttribute("userName") == null){
-        response.sendRedirect("login.jsp");
-    }
-%>
-
 <div class="container">
-
     <div class="row clearfix">
         <div class="col-md-12 column">
             <div class="row clearfix">
@@ -23,9 +16,8 @@
                     <div class="alert alert-success" role="alert">You logged in successfully.</div>
                     <br>
                     <p>Welcome to TravelPal! Here you can find a fellow traveler to acompany you to your next trip!</p>
-                    <br><br>
-                    <p>Edit you profile or visit our services.</p>
-                    <a href="profile.jsp" class="btn btn-primary btn-lg" role="button">Edit your profile</a>                    
+                    <br>
+                    <p>Now you can pick one our services.</p>                                        
                     <a href="services.jsp" class="btn btn-primary btn-lg" role="button">Let's go</a>
                 </div>
                 <div class="col-md-2 column">
@@ -34,7 +26,5 @@
         </div>
     </div>
 </div>
-
-
 
 <c:import url="footer.jsp"></c:import>

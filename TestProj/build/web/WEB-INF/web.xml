@@ -11,6 +11,7 @@
         <welcome-file>default.jsp</welcome-file>
         <welcome-file>url</welcome-file>
     </welcome-file-list>
+    
     <servlet>
         <description/>
         <display-name>Controller</display-name>
@@ -36,6 +37,7 @@
         <servlet-name>AddtripServlet</servlet-name>
         <servlet-class>com.TestProj.AddtripServlet</servlet-class>
     </servlet>
+    
     <servlet-mapping>
         <servlet-name>Controller</servlet-name>
         <url-pattern>/url</url-pattern>
@@ -56,6 +58,7 @@
         <servlet-name>AddtripServlet</servlet-name>
         <url-pattern>/AddtripServlet</url-pattern>
     </servlet-mapping>
+    
     <filter>
         <filter-name>RequestLoggingFilter</filter-name>
         <filter-class>com.TestProj.filters.RequestLoggingFilter</filter-class>

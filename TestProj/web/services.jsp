@@ -18,32 +18,16 @@
                 <div class="col-md-2 column">
                 </div>
                 <div class="col-md-8 column">
-                    <div class="wrapper">
-                        <form class="form-signin" method="post" action="AddtripServlet">  
-                            <c:if test="${message4 != null}">
-                            <div class="alert alert-success alert-dismissible" role="alert">${message4}</div> 
-                            </c:if>
-                            <c:if test="${message5 != null}">
-                            <div class="alert alert-success alert-dismissible" role="alert">${message4}</div> 
-                            </c:if>
-                            <h2 class="form-signin-heading">Add trip</h2>
-                            <p>Please enter the following information:</p>
-                            <label>Country
-                                <input type="text" class="form-control" name="country" id="country" placeholder="Ex: Usa" required="" autofocus="" />
-                            </label>
-                            <label>Region
-                                <input type="text" class="form-control" name="region" id="region" placeholder="Ex: Florida" required="" autofocus="" />
-                            </label>
-                            <label>City
-                                <input type="text" class="form-control" name="city" id="city" placeholder="Ex: Miami" required="" autofocus="" />
-                            </label>
-                            <label>Date
-                                <input type="text" class="form-control" name="date" id="date" placeholder="Ex: 2015-01-10" required="" autofocus="" />
-                            </label>
-                            <br>
-                            <button class="btn btn-primary btn-lg" type="submit" value="AddtripServlet">Add</button>                            
-                        </form>
-                    </div>
+                    <br>
+                    <h2>Select one of our services</h2>
+                    <br><br>
+                    <a href="profile.jsp" class="btn btn-primary btn-lg" role="button">Edit your profile</a> 
+                    <br><br>
+                    <a href="addTrip.jsp" class="btn btn-primary btn-lg" role="button">Add new trip</a>
+                    <br><br>                    
+                    <a href="showTripsIHost.jsp" class="btn btn-primary btn-lg" role="button">See all trips you are host</a>
+                    <br><br>
+                    <a href="showMyTrips.jsp" class="btn btn-primary btn-lg" role="button">See all your trips</a>
                 </div>
                 <div class="col-md-2 column">
                 </div>

@@ -14,12 +14,23 @@
         <title>TravelPal</title>
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/travelpal.js"></script>
+
         <link rel="stylesheet" href="css/logo-nav.css">
         <link rel="stylesheet" href="css/layout.css">
-        
+
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 
     </head>
 
@@ -69,6 +80,6 @@
             <!-- /.container -->
         </nav>
 
-        <div class=" container-fluid /*page-row page-row-expanded*/">
-        
+        <div class=" container-fluid ">
+
 

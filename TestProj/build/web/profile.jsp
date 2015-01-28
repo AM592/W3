@@ -21,6 +21,7 @@
                 <div class="col-md-8 column">
                     <br>
                     <h2>Here you can edit your profile!</h2>
+                    <p>(under construction)</p>
                     <br><br>
                     <a href="profile.jsp" class="btn btn-primary btn-lg" role="button">Edit your profile</a>
                 </div>

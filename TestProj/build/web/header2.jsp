@@ -10,16 +10,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Chris Laganas">
-        
+
 
         <title>TravelPal</title>
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/logo-nav.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/travelpal.js"></script>
+
         <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/datepicker.css"
+        <link rel="stylesheet" href="css/datepicker.css">
+
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+
     </head>
 
     <body>
@@ -37,7 +50,9 @@
                     }
                 }
             }
-            if(userName == null) response.sendRedirect("login.jsp");
+            if (userName == null) {
+                response.sendRedirect("login.jsp");
+            }
         %>        
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -69,8 +84,8 @@
             </div>
             <!-- /.container -->
         </nav>
-        
 
-        <div class=" container-fluid /*page-row page-row-expanded*/">
+
+        <div class=" container-fluid ">
 
 

@@ -12,14 +12,13 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/showTripsIHost.jsp</file>
             <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/src/java/com/TestProj/AddtripServlet.java</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/home.jsp</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/showMyTrips.jsp</file>
             <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/services.jsp</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/src/java/com/TestProj/Register.java</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/header2.jsp</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/signup.jsp</file>
-            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/header1.jsp</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/profile.jsp</file>
             <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/web/login.jsp</file>
+            <file>file:/C:/Users/Chris/Documents/NetBeansProjects/TestProj/src/java/com/TestProj/LoginServlet.java</file>
         </group>
     </open-files>
 </project-private>

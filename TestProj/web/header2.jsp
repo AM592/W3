@@ -24,7 +24,7 @@
         <script src="js/travelpal.js"></script>
 
         <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/datepicker.css">
+        <!--<link rel="stylesheet" href="css/datepicker.css">-->
 
         <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -75,6 +75,7 @@
                         <li><a href="home.jsp">Home</a></li> 
                         <li><a href="profile.jsp">My Profile</a></li> 
                         <li><a href="services.jsp">Services</a></li> 
+                        <li><a href="alltrips.jsp">All Trips</a></li> 
                         <form class="navbar-form navbar-right" action="LogoutServlet" method="POST">                            
                             <button type="submit" class="btn btn-default">Log out</button>
                         </form>

@@ -36,7 +36,7 @@
                             </label>
                             <label>Your Password
                                 <input type="password" class="form-control" name="password" placeholder="Pass" required=""/>      
-                            </label>
+                            </label><br>
                             <button class="btn btn-primary btn-lg" type="submit" value="Register">Sign Up</button>  
                             <br/>Already have an account? <a href="login.jsp">Login</a>
                         </form>

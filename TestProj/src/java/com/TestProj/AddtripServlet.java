@@ -66,10 +66,8 @@ public class AddtripServlet extends HttpServlet {
                 id = rs.getInt(1);
             }
 
-            //String sql="insert into table values(?,?,?,?)";
             java.sql.PreparedStatement ps = conn.prepareStatement("insert into trip_table ( country, city, region, dateFrom, dateTo, hostId) values(?,?,?,?,?,?)");
 
-            
             ps.setString(1, country);
             ps.setString(2, city);
             ps.setString(3, region);
@@ -83,19 +81,8 @@ public class AddtripServlet extends HttpServlet {
             int i = ps.executeUpdate();
             if (i > 0) {
                 request.setAttribute("message4", "Trip added successfully!");
-                request.getRequestDispatcher("/services.jsp").forward(request, response);
-                //out.print("Trip added successfully... <br>");
+                request.getRequestDispatcher("/addTrip.jsp").forward(request, response);                
             }
-            
-            Class.forName("com.mysql.jdbc.Driver");
-            conn2 = DriverManager.getConnection(url, dbUserName, dbpassword);
-            PreparedStatement pst2 = (PreparedStatement) conn2.prepareStatement ("SELECT (trip_table.id, trip_table.country, trip_table.city,trip_table.region,trip_table.dateFrom, trip_table.dateTo,trip_table.dateTo,trip_table.hostId,user_trips.Id,user_trips.UserId,user_trips.TripId) from trip_table LEFT OUTER JOIN user_trips ON trip_table.id = user_trips.TripId where user_trips.UserId='" + session.getAttribute("userID") + "' or trip_table.hostId = '" + session.getAttribute("userID") + "'");
-
-            ResultSet rs2= pst2.executeQuery();            
-            stmt = conn.createStatement();
-            
-            
-            
             
   
         } catch (ClassNotFoundException e1) {

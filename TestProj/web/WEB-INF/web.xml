@@ -12,12 +12,7 @@
         <welcome-file>url</welcome-file>
     </welcome-file-list>
     
-    <servlet>
-        <description/>
-        <display-name>Controller</display-name>
-        <servlet-name>Controller</servlet-name>
-        <servlet-class>controller.Controller</servlet-class>
-    </servlet>
+    
     <servlet>
         <display-name>LoginServlet</display-name>
         <servlet-name>LoginServlet</servlet-name>
@@ -38,10 +33,7 @@
         <servlet-class>com.TestProj.AddtripServlet</servlet-class>
     </servlet>
     
-    <servlet-mapping>
-        <servlet-name>Controller</servlet-name>
-        <url-pattern>/url</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -76,6 +68,7 @@
         <filter-name>AuthenticationFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
     <error-page>
         <error-code>404</error-code>
         <location>/error.jsp</location>

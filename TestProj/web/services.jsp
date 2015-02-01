@@ -19,9 +19,7 @@
                 </div>
                 <div class="col-md-8 column">
                     <br>
-                    <h2>Select one of our services</h2>
-                    <br><br>
-                    <a href="profile.jsp" class="btn btn-primary btn-lg" role="button">Edit your profile</a> 
+                    <h2>Select one of our services:</h2>                    
                     <br><br>
                     <a href="addTrip.jsp" class="btn btn-primary btn-lg" role="button">Add new trip</a>
                     <br><br>                    

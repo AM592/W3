@@ -19,12 +19,18 @@
     
     
     String MainSelectQuery = "SELECT " +
-                            "trip_table.id,trip_table.country,trip_table.city,trip_table.region,trip_table.dateFrom,trip_table.dateTo,trip_table.hostId,user_trips.Id,user_trips.UserId,user_trips.TripId " +
-                            "FROM " +
-                            "trip_table " +
-                            "LEFT OUTER JOIN user_trips ON trip_table.id = user_trips.TripId  " +
-                            "WHERE " +
-                            "user_trips.UserId = " + session.getAttribute("userID") + " OR trip_table.hostId = " + session.getAttribute("userID");
+                    "trip_table.id, " +
+                    "trip_table.country, " +
+                    "trip_table.city, " +
+                    "trip_table.region, " +
+                    "trip_table.dateFrom, " +
+                    "trip_table.dateTo, " + 
+                    "trip_table.hostId, " +
+                    "CONCAT(user_table.lastName, ' ', user_table.firstName) as fullname " +
+                    "FROM " +
+                    "trip_table " +
+                    "INNER JOIN user_table ON trip_table.hostId = user_table.id";
+    
     
 %>
 
@@ -37,20 +43,18 @@
                 </div>
                 <div class="col-md-8 column">
                     <br>
-                    <h2>Here you can see all your trips</h2>
-                    <p></p>                                               
+                    <h2>Here you can see all trips available</h2>
+                    <p>(Click the id to attend it)</p>                                               
                     <table class="table table-striped">
                         <thead>
                             <tr>
+                                <th>ID</th>
+                                <th>User</th>
                                 <th>Country</th>
                                 <th>City</th>
                                 <th>Region</th>
                                 <th>From Date</th>
-                                <th>To Date</th> 
-                                <th>Host ID</th>
-                                <!--<th>ID</th>
-                                <th>User ID</th>
-                                <th>Trip ID</th>-->                          
+                                <th>To Date</th>                          
                             </tr>
                         </thead>
                         <tbody>
@@ -59,15 +63,13 @@
                                 ResultSet r = pst.executeQuery();
                                 while (r.next()) {
                                     out.print("<tr>");
+                                    out.print("<td><a href='jointrip.jsp?tripid=" + r.getString("trip_table.id") + "&userid=" + session.getAttribute("userID") + "'>" + r.getString("trip_table.id") + "</a></td>");
+                                    out.print("<td>" + r.getString("fullname") + "</td>");
                                     out.print("<td>" + r.getString("trip_table.country") + "</td>");
                                     out.print("<td>" + r.getString("trip_table.city") + "</td>");
                                     out.print("<td>" + r.getString("trip_table.region") + "</td>");
                                     out.print("<td>" + r.getString("trip_table.dateFrom") + "</td>");
                                     out.print("<td>" + r.getString("trip_table.dateTo") + "</td>");
-                                    out.print("<td>" + r.getString("trip_table.hostId") + "</td>");
-                                    //out.print("<td>" + r.getString("user_trips.Id") + "</td>");
-                                    //out.print("<td>" + r.getString("user_trips.UserId") + "</td>");
-                                    //out.print("<td>" + r.getString("user_trips.Id") + "</td>");
                                     out.print("</tr>");
                                 }
                             %>

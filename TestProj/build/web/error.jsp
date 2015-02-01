@@ -22,6 +22,6 @@
     </div>
 </div>
 
-<meta http-equiv="Refresh" content="5;url=home.jsp">
+<meta http-equiv="Refresh" content="7;url=home.jsp">
 
 <c:import url="footer.jsp"></c:import>

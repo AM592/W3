@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.TestProj;
 
 
@@ -51,10 +47,7 @@ public class LogoutServlet extends HttpServlet {
                     //System.out.println("JSESSIONID="+cookie.getValue());
                     loginCookie = cookie;
                     break;
-                }
-                //Cookie userName = new Cookie("username", "");
-                //cookie.setMaxAge(0);
-                //response.addCookie(cookie);
+                }                
             }
         }
         //invalidate the session if exists

@@ -24,7 +24,7 @@
                             <div class="alert alert-success alert-dismissible" role="alert">${message4}</div> 
                             </c:if>
                             <c:if test="${message5 != null}">
-                            <div class="alert alert-success alert-dismissible" role="alert">${message4}</div> 
+                            <div class="alert alert-success alert-dismissible" role="alert">${message5}</div> 
                             </c:if>
                             <h2 class="form-signin-heading">Add your trip</h2>
                             <p>Please enter the following information:</p>

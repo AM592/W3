@@ -27,17 +27,15 @@ public class LoginServlet extends HttpServlet {
         super();
     }
 
+    @Override
     public void init(ServletConfig config) throws ServletException {
 
     }
 
+    @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        /*System.out.println("We are in service method of servlet");*/
-
-        /*
-         String username = "root";
-         String password = "123";
-         */
+        
+        
         String un = request.getParameter("username");
         String pw = request.getParameter("password");
 
@@ -74,8 +72,7 @@ public class LoginServlet extends HttpServlet {
                 RequestDispatcher rd = request.getRequestDispatcher("invalidLogin.jsp");
                 rd.forward(request,response);
             }
-            //rs.close();
-            //st.close();
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
